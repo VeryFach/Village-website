@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Profile Website</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="#contact" id="contact-link">Contact</a> |
+        <a href="#about" id="about-link">About</a> |
+        <a href="#map" id="map-link">Map</a> |
+        <a href="#video" id="video-link">Video Profile</a>
+    </nav>
+
+    <hr />
+
+    <header style="text-align: center;">
+        <img src="Asset/Logo_Kota_Batu.png" width="200" height="200" style="border-radius: 50%;" />
+        <h1>DESA DADAPREJO</h1>
+        <p>Kota Batu</p>
+    </header>
+
+    <hr />
+
+    <article style="text-align: center;">
+        <h2>Overview</h2>
+        <p>
+            Welcome to our village profile website. Here, you can find information about our village, its history, and its people.
+        </p>
+    </article>
+
+    <div style="max-width: 600px; margin: 3em auto">
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Information</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Location</td>
+                    <td>Wisata Eduaksi Dadaprejo terletak di Kelurahan Dadaprejo kecamatan Junrejo Kota Batu, lokasi Kelurahan Dadaprejo terletak di perbatasan kota malang dan batu pada sisi timur.</td>
+                </tr>
+                <tr>
+                    <td>Population</td>
+                    <td>Jumlah penduduk Dusun Dadaprejo 6471 jiwa</td>
+                </tr>
+                <tr>
+                    <td>History</td>
+                    <td>WISATA EDUAKSI KEBUN ANGGREK, WISATA EDUAKSI GERABAH DAN WISATA EDUAKSI BATIK.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Map Section -->
+    <div id="map" style="height: 500px; margin: 3em auto; max-width: 800px;"></div>
+
+    <!-- Video Profile Section -->
+    <div id="video" style="max-width: 800px; margin: 3em auto; text-align: center;">
+        <h2>Video Profile</h2>
+        <div class="video-container">
+            <video controls width="560">
+                <source src="path/to/your/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Photo gallery section -->
+    <div class="gallery-container">
+        <button class="gallery-button" id="prev-button">&#10094;</button>
+        <div class="gallery">
+            <img src="c:\Users\User\Documents\Website Profile\Asset\Figure_12.png" alt="1">
+            <img src="c:\Users\User\Documents\Website Profile\Asset\Figure_13.png" alt="2">
+            <img src="c:\Users\User\Documents\Website Profile\Asset\Figure_14.png" alt="3">
+        </div>
+        <button class="gallery-button" id="next-button">&#10095;</button>
+    </div>
+
+    <!-- Modal for About -->
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-about">&times;</span>
+            <h2>About This Website</h2>
+            <p>This website was created to provide detailed information about Desa Dadaprejo, its history, people, and cultural significance. Our aim is to connect our village to the world and share our rich heritage.</p>
+        </div>
+    </div>
+
+    <!-- Modal for Contact -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-contact">&times;</span>
+            <h2>Contact Us</h2>
+            <p>For inquiries, please contact us via WhatsApp: <a href="https://wa.me/qr/OL52W2G5J6AHL1" target="_blank">Click here to chat with us on WhatsApp</a></p>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
