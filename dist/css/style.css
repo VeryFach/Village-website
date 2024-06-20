@@ -1,3 +1,4 @@
+/* Reset default margin, padding, box-sizing, font family, and smooth scrolling behavior */
 * {
     margin: 0;
     padding: 0;
@@ -6,120 +7,157 @@
     scroll-behavior: smooth;
 }
 
+/* Set background color for the entire body */
 body {
-    background-color: #080b0c;
+    background-color: #f9f9f9;
 }
 
+/* Style for the header with a background image */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../assets/img/hero-bg.jpg");
+    background-image: linear-gradient(rgba(255, 254, 254, 0.8), rgba(0, 0, 0, 0.8)), url("../../assets/img/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+/* Container for centering content with 80% width */
 .container {
     width: 80%;
     margin-inline: auto;
 }
 
+/* Navbar styling */
 .navbar {
-    padding: 20px 0 20px 0;
+    padding: 20px 0 20px 0; /* Top and bottom padding */
     position: fixed;
-    width: 100%;
-    transition: all 0.3s ease;
+    width: 100%;  /* Full width */
+    transition: all 0.3s ease; /* Smooth transition */
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    z-index: 9999;
+    z-index: 9999; /* Higher z-index for stacking */
 }
 
+/* Navbar styling when scrolling */
 .navbar.scrolling-active {
-    background-color: #0050b3;
-    padding: 30px 0 30px 0;
+    background-color: #158630; /* Background color change */
+    padding: 30px 0 30px 0; /* Adjusted padding */
+
 }
 
+/* Navbar layout and alignment */
 .navbar .box-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Logo styling within the navbar */
+.navbar .box-navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo image styling */
+.navbar .box-navbar .logo img {
+    margin-right: 10px; /* Atur jarak antara logo dan teks judul */
+    height: 40px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+}
+
+/* Styling for navbar title */
 .navbar .box-navbar .logo h1 {
     color: white;
     font-size: 24px;
 }
 
+/* Styling for navbar menu */
 .navbar .box-navbar .menu {
     display: flex;
-    column-gap: 20px;
+    column-gap: 20px; /* Spacing between menu items */
 }
 
+/* Styling for list items within navbar menu */
 .navbar .box-navbar .menu li {
     list-style-type: none;
+}
+
+/* Styling for anchor links within navbar menu */
+.navbar .box-navbar .menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px 10px 15px;
+}
+
+/* Active menu item styling */
+.navbar .box-navbar .menu .active a {
+    background-color: #138230;
 }
 
 .navbar .box-navbar .menu li a {
     text-decoration: none;
     color: white;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
+    border-radius: 8px; /* Menentukan radius sudut */
+    transition: color 0.3s ease; /* Menambahkan transisi hanya untuk warna teks */
+    display: inline-block; /* Memastikan tautan dianggap sebagai blok di dalam list item */
 }
 
-.navbar .box-navbar .menu .active a {
-    background-color: #0050b3;
-}
-
+/* Navbar menu item hover styling */
 .navbar .box-navbar .menu li a:hover {
-    background-color: #0050b3;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+    background-color: transparent; /* Menghapus latar belakang saat dihover */
+    color: black; /* Ubah warna teks saat dihover */
 }
 
+/* Menu bar icon styling for smaller screens */
 .menu-bar {
     color: white;
     font-size: 24px;
     display: none;
 }
 
+/* Hero section styling */
 .hero {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh; /* Minimum height of viewport */
     display: flex;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 50px; /* Top padding */
 }
 
+/* Styling for hero content box */
 .hero .box-hero {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
     grid-template-rows: 1fr;
-    column-gap: 50px;
+    column-gap: 50px; /* Gap between columns */
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
 
+/* Styling for hero section title */
 .hero .box-hero .box:nth-child(1) h1 {
-    color: white;
-    font-size: 3vw;
-    line-height: 1.3;
-    margin-bottom: 20px;
+    color: white; /* Text color */
+    font-size: 3vw; /* Responsive font size */
+    line-height: 1.3; /* Line height */
+    margin-bottom: 20px; /* Bottom margin */
 }
 
+/* Paragraph styling within hero section */
 .hero .box-hero .box:nth-child(1) p {
-    line-height: 2;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: 100;
+    line-height: 2; /* Line height */
+    color: white; /* Text color */
+    margin-bottom: 20px; /* Bottom margin */
+    font-weight: 100; /* Font weight */
 }
 
+/* Button styling within hero section */
 .hero .box-hero .box:nth-child(1) button {
     width: 180px;
     height: 50px;
-    background-color: #0050b3;
+    background-color: #138230;
     font-weight: bold;
     color: white;
     border: none;
@@ -131,8 +169,9 @@ header {
     -o-border-radius: 5px;
 }
 
+/* Button hover effect */
 .hero .box-hero .box:nth-child(1) button:hover {
-    background-color: #053e83;
+    background-color: #0d5520;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -140,10 +179,12 @@ header {
     -o-transition: all 0.3s ease;
 }
 
+/* Image styling within hero section */
 .hero .box-hero .box:nth-child(2) img {
     width: 100%;
 }
 
+/* Services section styling */
 .services {
     width: 100%;
     min-height: 50vh;
@@ -152,33 +193,39 @@ header {
     padding: 100px 0 50px 0;
 }
 
+/* Services box container styling */
 .services .box-services {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 50px;
+    flex-wrap: wrap; /* Wrap items */
+    justify-content: space-evenly; /* Even spacing */
+    row-gap: 50px; /* Gap between rows */
 }
 
+/* Individual service box styling */
 .services .box-services .box {
-    width: 300px;
-    text-align: center;
-    color: white;
+    width: 300px; /* Box width */
+    text-align: center; /* Box width */
+    color: black; /* Text color */
 }
 
+/* Icon styling within service box */
 .services .box-services .box i {
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #0050b3;
+    font-size: 40px; /* Icon size */
+    margin-bottom: 10px; /* Bottom margin */
+    color: #0050b3; /* Icon color */
 }
 
+/* Paragraph styling within service box */
 .services .box-services .box p {
     font-weight: 100;
 }
 
+/* Pantai section styling */
 .pantai {
     padding: 50px 0 50px 0;
 }
 
+/* Pantai box container styling */
 .pantai .box-pantai {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -186,9 +233,10 @@ header {
     row-gap: 50px;
 }
 
+/* Individual box styling within pantai section */
 .pantai .box-pantai .box {
     text-align: center;
-    color: white;
+    color: black;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -196,6 +244,7 @@ header {
     -o-transition: all 0.3s ease;
 }
 
+/* Hover effect for boxes within pantai section */
 .pantai .box-pantai .box:hover {
     transform: translateY(-20px);
     -webkit-transform: translateY(-20px);
@@ -204,6 +253,7 @@ header {
     -o-transform: translateY(-20px);
 }
 
+/* Image styling within pantai box */
 .pantai .box-pantai .box img {
     width: 100%;
     height: 200px;
@@ -215,16 +265,18 @@ header {
     -o-border-radius: 5px;
 }
 
+/* Paragraph styling within pantai box */
 .pantai .box-pantai .box p {
-    font-weight: 100;
-    margin-bottom: 10px;
+    font-weight: 100; /* Font weight */
+    margin-bottom: 10px; /* Bottom margin */
 }
 
+/* Button styling within pantai box */
 .pantai .box-pantai .box button {
     width: 120px;
     height: 40px;
     border: none;
-    background-color: #0050b3;
+    background-color: #138230;
     color: white;
     font-weight: bold;
     border-radius: 5px;
@@ -235,8 +287,9 @@ header {
     cursor: pointer;
 }
 
+/* Button hover effect within pantai box */
 .pantai .box-pantai .box button:hover {
-    background-color: #053e83;
+    background-color: #0b4f1d;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -244,19 +297,23 @@ header {
     -o-transition: all 0.3s ease;
 }
 
+/* Daftar section styling */
 .daftar {
     padding: 50px 0 100px 0;
 }
 
+/* Daftar box container styling */
 .daftar .box-daftar {
-    color: white;
+    color: black;
     text-align: center;
 }
 
+/* Daftar section title styling */
 .daftar .box-daftar h1 {
     margin-bottom: 50px;
 }
 
+/* Daftar section subtitle styling */
 .daftar .box-daftar h3 {
     font-weight: 400;
     margin-bottom: 10px;
@@ -264,9 +321,10 @@ header {
     -webkit-animation: animasi 2s infinite;
 }
 
+/* Animation keyframes definition */
 @keyframes animasi {
     0% {
-        transform: scale(1);
+        transform: scale(1); /* Transforms the element to its original size */
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
@@ -274,7 +332,7 @@ header {
     }
 
     50% {
-        transform: scale(1.2);
+        transform: scale(1.2); /* Scales the element to 120% of its original size */
         -webkit-transform: scale(1.2);
         -moz-transform: scale(1.2);
         -ms-transform: scale(1.2);
@@ -282,7 +340,7 @@ header {
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(1); /* Returns the element to its original size */
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
@@ -290,57 +348,65 @@ header {
     }
 }
 
+/* Styling for buttons inside .box-daftar within .daftar */
 .daftar .box-daftar button {
-    border: none;
-    min-width: 100px;
-    min-height: 40px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
+    border: none; /* Removes border from button */
+    min-width: 100px; /* Sets minimum width for button */
+    min-height: 40px; /* Sets minimum height for button */
+    border-radius: 5px; /* Adds rounded corners to button */
+    -webkit-border-radius: 5px; /* Vendor-specific prefix for border-radius */
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    cursor: pointer;
-    background-color: #0050b3;
-    color: white;
-    padding-inline: 10px;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    background-color: #138230; /* Background color of the button */
+    color: white; /* Text color of the button */
+    padding-inline: 10px; /* Horizontal padding for button content */
 }
 
+/* Styling for icon inside button */
 .daftar .box-daftar button i {
-    font-size: 16px;
-    font-weight: bold;
-    margin-inline: 5px;
+    font-size: 16px; /* Sets font size for icon */
+    font-weight: bold; /* Sets font weight for icon */
+    margin-inline: 5px; /* Horizontal margin for icon */
 }
 
+/* Styling for footer section */
 .footer {
-    padding: 50px 0 50px 0;
-    background-color: #0050b3;
+    padding: 50px 0 50px 0; /* Padding for top and bottom of footer */
+    background-color: #138230; /* Background color of footer */
 }
 
+/* Grid layout for footer */
 .footer .box-footer {
-    display: grid;
-    grid-template-columns: 2fr auto 2fr;
-    column-gap: 100px;
-    align-items: center;
+    display: grid; /* Displays footer items in a grid layout */
+    grid-template-columns: 2fr auto 2fr; /* Defines column layout */
+    column-gap: 100px; /* Gap between columns */
+    align-items: center; /* Aligns items vertically */
 }
 
+/* Styling for individual boxes within footer */
 .footer .box-footer .box {
-    color: white;
+    color: black; /* Text color for box content */
 }
 
-.footer .box-footer .box:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+/* Styling for specific box in footer (terms and conditions) */
+.footer .box-footer .box:nth-child(1) p {
+    font-size: 12px; /* Font size for text */
+    line-height: 2; /* Line height for text */
+    margin-top: 10px; /* Top margin for paragraph */
 }
 
+/* Styling for links inside the second box of the footer */
 .footer .box-footer .box:nth-child(2) a {
-    text-decoration: none;
-    color: white;
-    font-weight: 200;
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Text color for links */
+    font-weight: 200; /* Font weight for links */
 }
 
+/* Additional styling for paragraphs inside the second box of the footer */
 .footer .box-footer .box p {
-    font-weight: 200;
+    font-weight: 200; /* Font weight for paragraphs */
 }
 
 .footer .box-footer .box:nth-child(1) p {
@@ -349,139 +415,164 @@ header {
     margin-top: 10px;
 }
 
+/* Styling for the third box in footer (center alignment) */
 .footer .box-footer .box:nth-child(3) {
-    text-align: center;
+    text-align: center; /* Centers text horizontally */
 }
 
+/* Styling for specific element inside the third box of footer */
 .footer .box-footer .box:nth-child(3) span {
-    font-weight: bold;
+    font-weight: bold; /* Bold font weight for span */
 }
 
+/* Media query for screens up to 1200px */
 @media screen and (max-width: 1200px) {
     .hero .box-hero .box:nth-child(1) button {
-        width: 150px;
+        width: 150px; /* Adjusts button width */
     }
 }
 
+/* Media query for screens up to 990px */
 @media screen and (max-width: 990px) {
+    /* Styling for menu-bar when displayed */
     .menu-bar {
-        display: block;
+        display: block; /* Changes display to block */
     }
 
+    /* Styling for menu dropdown */
     .navbar .box-navbar .menu {
-        position: absolute;
-        flex-direction: column;
-        width: 100%;
-        height: 200px;
-        row-gap: 20px;
-        justify-content: center;
-        align-items: center;
-        top: 70px;
-        right: 50%;
-        transform: translateX(50%);
+        position: absolute; /* Positions menu absolutely */
+        flex-direction: column; /* Arranges items vertically */
+        width: 100%; /* Full width */
+        height: 200px; /* Fixed height */
+        row-gap: 20px; /* Spacing between rows */
+        justify-content: center; /* Centers content vertically */
+        align-items: center; /* Centers content horizontally */
+        top: 70px; /* Position from top */
+        right: 50%; /* Position from right */
+        transform: translateX(50%); /* Centers horizontally */
         -webkit-transform: translateX(50%);
         -moz-transform: translateX(50%);
         -ms-transform: translateX(50%);
         -o-transform: translateX(50%);
-        opacity: 0;
-        transition: all 0.3s ease;
+        opacity: 0; /* Initial opacity */
+        transition: all 0.3s ease; /* Smooth transition */
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
-        background-color: #0050b3;
+        background-color: #138230; /* Background color */
     }
 
+    /* Styling for active menu dropdown */
     .navbar .box-navbar .menu.menu-active {
-        top: 80px;
-        opacity: 1;
-        border-top: 1px solid white;
+        top: 80px; /* Adjusted position from top */
+        opacity: 1; /* Visible state */
+        border-top: 1px solid white; /* Top border */
     }
 
+    /* Font size adjustment for paragraph in .box-hero */
     .hero .box-hero .box:nth-child(1) p {
-        font-size: 14px;
+        font-size: 14px; /* Font size adjustment */
     }
 
+    /* Font size adjustment for heading in .box-daftar */
     .daftar .box-daftar h1 {
-        font-size: 28px;
+        font-size: 28px; /* Font size adjustment */
     }
 
+    /* Adjusted grid layout for footer */
     .footer .box-footer {
-        grid-template-columns: 1fr;
-        row-gap: 30px;
+        grid-template-columns: 1fr; /* Single column layout */
+        row-gap: 30px; /* Spacing between rows */
     }
 }
 
+/* Media query for screens up to 768px */
 @media screen and (max-width: 768px) {
+    /* Adjusted grid layout for .box-hero */
     .hero .box-hero {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 10px;
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: repeat(2, 1fr); /* Two rows */
+        row-gap: 10px; /* Spacing between rows */
     }
 
+    /* Styling for first child box in .box-hero */
     .hero .box-hero .box:nth-child(1) {
-        order: 2;
-        text-align: center;
+        order: 2; /* Changes order */
+        text-align: center; /* Centers text */
     }
 
+    /* Styling for second child box in .box-hero */
     .hero .box-hero .box:nth-child(2) {
-        order: 1;
-        text-align: center;
+        order: 1; /* Changes order */
+        text-align: center; /* Centers text */
     }
 
+    /* Adjusted width for image in second child of .box-hero */
     .hero .box-hero .box:nth-child(2) img {
-        width: 55vw;
+        width: 55vw; /* Adjusted width */
     }
 }
 
+/* Media query for screens up to 575px */
 @media screen and (max-width: 575px) {
+     /* Font size adjustment for heading in .box-hero */
     .hero .box-hero .box:nth-child(1) h1 {
-        font-size: 18px;
+        font-size: 18px; /* Font size adjustment */
     }
 }
 
+/* Media query for screens up to 475px */
 @media screen and (max-width: 475px) {
+    /* Margin adjustment for button in .box-daftar */
     .daftar .box-daftar button {
-        margin-bottom: 5px;
+        margin-bottom: 5px; /* Bottom margin */
     }
 }
 
+/* Media query for screens up to 370px */
 @media screen and (max-width: 370px) {
+    /* Adjusted width and alignment for second child in .box-hero */
     .hero .box-hero .box:nth-child(2) {
-        width: 55vw;
-        align-self: flex-end;
-        justify-self: center;
+        width: 55vw; /* Adjusted width */
+        align-self: flex-end; /* Aligns to bottom */
+        justify-self: center; /* Centers horizontally */
     }
 
+    /* Adjusted grid layout for .box-pantai */
     .pantai .box-pantai {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
     }
-}
-
-/* Map styles */
-#map {
-    height: 500px;
-    margin: 3em auto;
-    max-width: 800px;
 }
 
 /* Video styles */
-.video-container {
+#Video {
     position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
+    width: 80%; /* Lebar kontainer adalah 80% dari parent (#Video) */
+    margin: 3em auto; /* Margin atas dan bawah 3em, dan auto untuk tengah secara horizontal */
+    text-align: center; /* Untuk mengatur posisi teks */
+}
+
+#Video .video-container {
     overflow: hidden;
-    max-width: 100%;
     background: #000;
-    margin: 0 auto;
     border-radius: 10px;
 }
 
-.video-container video {
+#Video video {
+    width: 100%; /* Video mengambil seluruh lebar kontainer */
+    height: auto; /* Tinggi video menyesuaikan proporsionalnya */
+    display: block; /* Untuk menghilangkan whitespace di sekitar elemen */
+    border-radius: 10px; /* Memastikan video berbentuk persegi panjang dengan sudut bulat */
+}
+
+#Video h2 {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+    top: -40px; /* Jarak dari atas kontainer video, sesuaikan sesuai kebutuhan */
+    left: 50%; /* Posisi horizontal tengah */
+    transform: translateX(-50%); /* Untuk menggeser teks ke kiri sejauh setengah dari lebar elemen teks */
+    color: #0a0a0a; /* Warna teks */
+    margin: 0; /* Menghilangkan margin default */
+    z-index: 10; /* Untuk memastikan teks muncul di atas video */
 }
