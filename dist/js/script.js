@@ -24,7 +24,7 @@ function openWhatsapp() {
 
 // Fungsi untuk membuka link Gmail
 function openGmail() {
-    window.open('veryfach@gmail.com', '_blank');
+    window.open('mailto:veryfach@gmail.com', '_blank');
 }
 
 // Fungsi untuk membuka Google Form
@@ -41,14 +41,47 @@ gmailBtn.addEventListener('click', openGmail);
 // Event listener untuk tombol Google Form
 googleFormBtn.addEventListener('click', openGoogleForm);
 
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.detail-button');
+    
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const url = this.getAttribute('data-url');
+            window.location.href = url;
+        });
+    });
+});
 
-// Initialize Leaflet map
-document.addEventListener("DOMContentLoaded", function () {
-    const map = L.map('map').setView([-7.895, 112.568], 13);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-    L.marker([-7.895, 112.568]).addTo(map)
-        .bindPopup('Desa Dadaprejo')
-        .openPopup();
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.Selengkapnya-button');
+    
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const url = this.getAttribute('data-url');
+            window.location.href = url;
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Ambil semua link menu dengan class 'menu'
+    var menuLinks = document.querySelectorAll('.menu a');
+
+    // Tambahkan event listener untuk setiap link menu
+    menuLinks.forEach(function(menuLink) {
+        menuLink.addEventListener('click', function(e) {
+            e.preventDefault(); // Mencegah default action dari link
+            
+            var targetId = this.getAttribute('href'); // Ambil nilai href dari link
+            var targetElement = document.querySelector(targetId); // Temukan elemen target berdasarkan ID
+            
+            if (targetElement) {
+                // Gulir halus ke elemen target
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth' // Gulir halus
+                });
+            }
+        });
+    });
 });
