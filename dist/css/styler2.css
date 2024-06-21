@@ -545,3 +545,79 @@ header {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
     }
 }
+
+.image-gallery {
+    flex: 1;
+    text-align: center;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.thumbnail:hover {
+    border: 2px solid #138230;
+}
+
+.details {
+    flex: 2;
+    padding: 20px;
+}
+
+.details h1 {
+    margin-top: 0;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating span {
+    margin-right: 5px;
+}
+
+.category, .price {
+    margin-top: 10px;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #138230;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-button:hover {
+    background-color: #0a4319;
+}
+
+.contact-icons {
+    margin-top: 20px;
+}
