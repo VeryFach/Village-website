@@ -558,13 +558,19 @@ header {
     overflow: hidden;
     background: #000;
     border-radius: 10px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
 }
 
-#Video video {
-    width: 100%; /* Video mengambil seluruh lebar kontainer */
-    height: auto; /* Tinggi video menyesuaikan proporsionalnya */
-    display: block; /* Untuk menghilangkan whitespace di sekitar elemen */
-    border-radius: 10px; /* Memastikan video berbentuk persegi panjang dengan sudut bulat */
+#Video .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* iframe mengambil seluruh lebar kontainer */
+    height: 100%; /* iframe mengambil seluruh tinggi kontainer */
+    border-radius: 10px; /* Memastikan iframe berbentuk persegi panjang dengan sudut bulat */
+    border: 0;
 }
 
 #Video h2 {
