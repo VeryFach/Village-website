@@ -85,3 +85,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.getElementById('youtubeVideoContainer').addEventListener('click', function() {
+    window.open('https://youtu.be/IrcoYCD9-nM?si=ca7eFsUV7LzsfORD', '_blank');
+});
+
+document.querySelectorAll('.profile').forEach(function(profile) {
+    profile.addEventListener('mouseover', function() {
+        this.querySelector('.tooltip').style.display = 'block';
+    });
+    profile.addEventListener('mouseout', function() {
+        this.querySelector('.tooltip').style.display = 'none';
+    });
+});
+
+// Image penjelasan pada UMKM
+document.addEventListener('DOMContentLoaded', function() {
+    const mainImage = document.getElementById('mainImage');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const contactSeller = document.getElementById('contactSeller');
+    const whatsappLink = document.getElementById('whatsappLink');
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+            mainImage.src = this.src;
+        });
+    });
+
+    contactSeller.addEventListener('click', function() {
+        window.open(whatsappLink.href, '_blank');
+    });
+});
