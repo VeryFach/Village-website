@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="home">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -18,7 +18,7 @@
         rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/styler2.css" />
     <title>Landing Page #1 | Ngoding Mastery</title>
 </head>
 
@@ -32,10 +32,7 @@
                         <h1>Desa Dadaprejo</h1>
                     </div>
                     <ul class="menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#pantai">UMKM</a></li>
-                        <li><a href="#Video">Video</a></li>
-                        <li class="active"><a href="#daftar">Daftar</a></li>
+                        <li class="active"><a href="index.html#daftar">Home</a></li>
                     </ul>
                     <i class="fa-solid fa-bars menu-bar"></i>
                 </div>
@@ -47,110 +44,44 @@
                 <div class="box-hero">
                     <div class="box">
                         <h1>
-                            Kampung Anggrek <br />
-                            Desa Dadaprejo Kota Batu
+                            Pejelasan UMKM <br />
+                            Bagaimana cara menghubungi UMKM tersebut
                         </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, autem?</p>
-                        <button class="Selengkapnya-button" data-url="penjelasan.html">Selengkapnya</button>
+                        <p>perhatika ketika ingin merubah kode pastiin cek nama element di css</p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Services
-    <div class="services" id="services">
-        <div class="container">
-            <div class="box-services">
-                <div class="box">
-                    <i class="fa-solid fa-coins"></i>
-                    <h4>Harga Terjangkau</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, labore.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-certificate"></i>
-                    <h4>Sudah Tersertifikasi</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, labore.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-people-roof"></i>
-                    <h4>Aman dan Ramah</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, labore.</p>
-                </div>
+    <!--Foto UMKM pertama-->>
+    <div class="container">
+        <div class="image-gallery">
+            <img id="mainImage" src="assets/img/pantai1.jpg" alt="Main Image">
+            <div class="thumbnail-container">
+                <img class="thumbnail" src="assets/img/pantai1.jpg" alt="Thumbnail 1">
+                <img class="thumbnail" src="assets/img/pantai2.jpg" alt="Thumbnail 2">
+                <img class="thumbnail" src="assets/img/pantai3.jpg" alt="Thumbnail 3">
             </div>
         </div>
-    </div>
-    Services -->
-
-    <!-- Pantai -->
-    <div class="pantai" id="pantai">
-        <div class="container">
-            <div class="box-pantai">
-                <div class="box">
-                    <img src="assets/img/pantai1.jpg" alt="" />
-                    <h3>Destinasi Pantai 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
-                    <button class="detail-button" data-url="Detail.html">Detail</button>
-                </div>
-                <div class="box">
-                    <img src="assets/img/pantai2.jpg" alt="" />
-                    <h3>Destinasi Pantai 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
-                    <button class="detail-button" data-url="Detail.html">Detail</button>
-                </div>
-                <div class="box">
-                    <img src="assets/img/pantai3.jpg" alt="" />
-                    <h3>Destinasi Pantai 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
-                    <button class="detail-button" data-url="Detail.html">Detail</button>
-                </div>
-                <div class="box">
-                    <img src="assets/img/pantai4.jpg" alt="" />
-                    <h3>Destinasi Pantai 4</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
-                    <button class="detail-button" data-url="Detail.html">Detail</button>
-                </div>
-                <div class="box">
-                    <img src="assets/img/pantai5.jpg" alt="" />
-                    <h3>Destinasi Pantai 5</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
-                    <button class="detail-button" data-url="Detail.html">Detail</button>
-                </div>
-                <div class="box">
-                    <img src="assets/img/pantai6.jpg" alt="" />
-                    <h3>Destinasi Pantai 6</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, modi.</p>
-                    <button class="detail-button" data-url="Detail.html">Detail</button>
-                </div>
+        <div class="details">
+            <h1>Roottita Cake Dan Bakery</h1>
+            <div class="rating">
+                <span>★★★★★</span>
+                <span>Penilaian (1)</span>
             </div>
-        </div>
-    </div>
-    <!-- Pantai -->
-
-    <!-- Konten Video -->
-    <div id="Video" class="section">
-        <h2>Video Desa Dadaprejo</h2>
-        <div class="video-container" id="youtubeVideoContainer">
-            <iframe src="https://www.youtube.com/embed/IrcoYCD9-nM" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <!-- Daftar -->
-    <div class="daftar" id="daftar">
-        <div class="container">
-            <div class="box-daftar">
-                <h1>
-                    Ingin Berlibur? <br />
-                    Segera Daftarkan Keluarga Anda!
-                </h1>
-                <h3>Klik Link di Bawah Ini!</h3>
-                <button id="whatsappBtn"><i class="fa-brands fa-whatsapp"></i> Whatsapp</button>
-                <button id="gmailBtn"><i class="fa-regular fa-envelope"></i> Gmail</button>
-                <button id="googleFormBtn"><i class="fa-regular fa-clipboard"></i> Google Form</button>
+            <div class="category">
+                <span>Makanan & Minuman</span>
             </div>
+            <div class="price">
+                <h2>Rp18.000</h2>
+            </div>
+            <div class="description">
+                <p>1. Bahan Segar dan Alami: Roottita Cake and Bakery selalu menggunakan bahan-bahan segar dan alami...</p>
+            </div>
+            <button id="contactSeller" class="contact-button">Hubungi Penjual</button>
         </div>
     </div>
-    <!-- Daftar -->
 
     <!-- Footer -->
     <div class="footer">
