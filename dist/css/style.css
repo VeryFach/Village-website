@@ -66,11 +66,25 @@ header {
     height: 40px; /* Sesuaikan ukuran logo sesuai kebutuhan */
 }
 
+.navbar .logo .text{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 10px;
+}
+
 /* Styling for navbar title */
 .navbar .box-navbar .logo h1 {
     color: white;
     font-size: 24px;
 }
+
+.navbar .box-navbar .logo h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #fff;
+  }
 
 /* Styling for navbar menu */
 .navbar .box-navbar .menu {
@@ -184,41 +198,46 @@ header {
     width: 100%;
 }
 
-/* Services section styling */
-.services {
-    width: 100%;
-    min-height: 50vh;
+/* About Section */
+.about {
+    padding: 8rem 7% 1.4rem;
+  }
+  
+  .about .row {
     display: flex;
+  }
+  
+  .about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+  }
+  
+  .about .row .content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about .row .content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+  }
+  
+  .about .row .about-img {
+    flex: 1 1 45rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 100px 0 50px 0;
-}
-
-/* Services box container styling */
-.services .box-services {
-    display: flex;
-    flex-wrap: wrap; /* Wrap items */
-    justify-content: space-evenly; /* Even spacing */
-    row-gap: 50px; /* Gap between rows */
-}
-
-/* Individual service box styling */
-.services .box-services .box {
-    width: 300px; /* Box width */
-    text-align: center; /* Box width */
-    color: black; /* Text color */
-}
-
-/* Icon styling within service box */
-.services .box-services .box i {
-    font-size: 40px; /* Icon size */
-    margin-bottom: 10px; /* Bottom margin */
-    color: #0050b3; /* Icon color */
-}
-
-/* Paragraph styling within service box */
-.services .box-services .box p {
-    font-weight: 100;
-}
+    margin-top: 50px;
+  }
+  
+  .about .row .about-img img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Add shadow for a nicer effect */
+  }
 
 /* Pantai section styling */
 .pantai {
