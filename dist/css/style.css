@@ -101,6 +101,7 @@ header {
 .navbar .box-navbar .menu li a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
     padding: 10px 15px 10px 15px;
 }
 
