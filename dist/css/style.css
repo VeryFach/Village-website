@@ -241,12 +241,12 @@ header {
 }
 
 /* Pantai section styling */
-.pantai {
+.umkm {
     padding: 50px 0 50px 0;
 }
 
 /* Pantai box container styling */
-.pantai .box-pantai {
+.umkm .box-umkm {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -254,7 +254,7 @@ header {
 }
 
 /* Individual box styling within pantai section */
-.pantai .box-pantai .box {
+.umkm .box-umkm .umk {
     text-align: center;
     color: black;
     transition: all 0.3s ease;
@@ -265,7 +265,7 @@ header {
 }
 
 /* Hover effect for boxes within pantai section */
-.pantai .box-pantai .box:hover {
+.umkm .box-umkm .umk:hover {
     transform: translateY(-20px);
     -webkit-transform: translateY(-20px);
     -moz-transform: translateY(-20px);
@@ -274,7 +274,7 @@ header {
 }
 
 /* Image styling within pantai box */
-.pantai .box-pantai .box img {
+.umkm .box-umkm .umk img {
     width: 100%;
     height: 200px;
     margin-bottom: 10px;
@@ -286,13 +286,13 @@ header {
 }
 
 /* Paragraph styling within pantai box */
-.pantai .box-pantai .box p {
+.umkm .box-umkm .umkm p {
     font-weight: 100; /* Font weight */
     margin-bottom: 10px; /* Bottom margin */
 }
 
 /* Button styling within pantai box */
-.pantai .box-pantai .box button {
+.umkm .box-umkm .umk button {
     width: 120px;
     height: 40px;
     border: none;
@@ -308,7 +308,7 @@ header {
 }
 
 /* Button hover effect within pantai box */
-.pantai .box-pantai .box button:hover {
+.umkm .box-umkm .umk button:hover {
     background-color: #0b4f1d;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
