@@ -116,3 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
         window.open(whatsappLink.href, '_blank');
     });
 });
+
+// Berita
+function redirectToDetail(articleId) {
+    window.location.href = `detail.html?id=${articleId}`;
+}
