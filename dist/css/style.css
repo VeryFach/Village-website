@@ -204,41 +204,41 @@ header {
     padding: 8rem 7% 1.4rem;
   }
   
-  .about .row {
+.about .row {
     display: flex;
   }
   
-  .about .row .content {
+.about .row .content {
     flex: 1 1 35rem;
     padding: 0 1rem;
-  }
+}
   
-  .about .row .content h2 {
+.about .row .content h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
+}
   
-  .about .row .content p {
+.about .row .content p {
     font-size: 18px;
     line-height: 1.6;
     color: black;
-  }
+}
   
-  .about .row .about-img {
+.about .row .about-img {
     flex: 1 1 45rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-  }
+}
   
-  .about .row .about-img img {
+.about .row .about-img img {
     width: 350px;
     height: 350px;
     border-radius: 50%;
     padding: 5px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Add shadow for a nicer effect */
-  }
+}
 
 /* Pantai section styling */
 .pantai {
