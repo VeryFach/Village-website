@@ -119,5 +119,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Berita
 function redirectToDetail(articleId) {
-    window.location.href = `detail.html?id=${articleId}`;
+    window.location.href = `?id=${articleId}`;
 }
