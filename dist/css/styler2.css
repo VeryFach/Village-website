@@ -66,10 +66,24 @@ header {
     height: 40px; /* Sesuaikan ukuran logo sesuai kebutuhan */
 }
 
+.navbar .logo .text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10px;
+}
+  
 /* Styling for navbar title */
 .navbar .box-navbar .logo h1 {
     color: white;
     font-size: 24px;
+}
+  
+.navbar .box-navbar .logo h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #fff;
 }
 
 /* Styling for navbar menu */
@@ -92,16 +106,21 @@ header {
 
 /* Active menu item styling */
 .navbar .box-navbar .menu .active a {
-    background-color: #138230;
+    background-color: white;
 }
 
 .navbar .box-navbar .menu li a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
     padding: 10px 15px;
     border-radius: 8px; /* Menentukan radius sudut */
     transition: color 0.3s ease; /* Menambahkan transisi hanya untuk warna teks */
     display: inline-block; /* Memastikan tautan dianggap sebagai blok di dalam list item */
+}
+
+.navbar .box-navbar .menu li a span{
+    color: black;
 }
 
 /* Navbar menu item hover styling */
@@ -284,7 +303,7 @@ header {
         position: absolute; /* Positions menu absolutely */
         flex-direction: column; /* Arranges items vertically */
         width: 100%; /* Full width */
-        height: 200px; /* Fixed height */
+        height: 50px; /* Fixed height */
         row-gap: 20px; /* Spacing between rows */
         justify-content: center; /* Centers content vertically */
         align-items: center; /* Centers content horizontally */

@@ -66,10 +66,24 @@ header {
     height: 40px; /* Sesuaikan ukuran logo sesuai kebutuhan */
 }
 
+.navbar .logo .text{
+display: flex;
+flex-direction: column;
+text-align: left;
+margin-left: 10px;
+}
+  
 /* Styling for navbar title */
 .navbar .box-navbar .logo h1 {
     color: white;
     font-size: 24px;
+}
+  
+.navbar .box-navbar .logo h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #fff;
 }
 
 /* Styling for navbar menu */
@@ -83,25 +97,23 @@ header {
     list-style-type: none;
 }
 
-/* Styling for anchor links within navbar menu */
-.navbar .box-navbar .menu li a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 15px 10px 15px;
-}
-
 /* Active menu item styling */
 .navbar .box-navbar .menu .active a {
-    background-color: #138230;
+    background-color: white;
 }
 
 .navbar .box-navbar .menu li a {
     text-decoration: none;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
     border-radius: 8px; /* Menentukan radius sudut */
     transition: color 0.3s ease; /* Menambahkan transisi hanya untuk warna teks */
     display: inline-block; /* Memastikan tautan dianggap sebagai blok di dalam list item */
+}
+
+.navbar .box-navbar .menu li a span{
+    color: black;
 }
 
 /* Navbar menu item hover styling */
@@ -227,7 +239,7 @@ header {
 
 /* Styling for individual boxes within footer */
 .footer .box-footer .box {
-    color: black; /* Text color for box content */
+    color: white /* Text color for box content */
 }
 
 /* Styling for specific box in footer (terms and conditions) */
@@ -284,7 +296,7 @@ header {
         position: absolute; /* Positions menu absolutely */
         flex-direction: column; /* Arranges items vertically */
         width: 100%; /* Full width */
-        height: 200px; /* Fixed height */
+        height: 50px; /* Fixed height */
         row-gap: 20px; /* Spacing between rows */
         justify-content: center; /* Centers content vertically */
         align-items: center; /* Centers content horizontally */
@@ -314,11 +326,6 @@ header {
     /* Font size adjustment for paragraph in .box-hero */
     .hero .box-hero .box:nth-child(1) p {
         font-size: 14px; /* Font size adjustment */
-    }
-
-    /* Font size adjustment for heading in .box-daftar */
-    .daftar .box-daftar h1 {
-        font-size: 28px; /* Font size adjustment */
     }
 
     /* Adjusted grid layout for footer */
