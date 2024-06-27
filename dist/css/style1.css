@@ -14,17 +14,23 @@ body {
 
 /* Style for the header with a background image */
 header {
-    background-image: linear-gradient(rgba(255, 254, 254, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/hero-bg.jpg");
+    background-image: linear-gradient(rgba(255, 254, 254, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/foto\ bg\ dadaprejo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-/* Container for centering content with 80% width */
-.container {
+.navbar-container{
     width: 80%;
     margin-inline: auto;
+}
+
+/* Container for centering content with 80% width */
+.profile-container {
+    display: flex;
+    justify-content: space-around; /* Atur jarak antar gambar */
+    align-items: center; /* Atur gambar secara vertikal di tengah */
 }
 
 /* Navbar styling */
@@ -44,7 +50,6 @@ header {
 .navbar.scrolling-active {
     background-color: #158630; /* Background color change */
     padding: 30px 0 30px 0; /* Adjusted padding */
-
 }
 
 /* Navbar layout and alignment */
@@ -67,10 +72,10 @@ header {
 }
 
 .navbar .logo .text{
-display: flex;
-flex-direction: column;
-text-align: left;
-margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10px;
 }
   
 /* Styling for navbar title */
@@ -105,7 +110,7 @@ margin-left: 10px;
 .navbar .box-navbar .menu li a {
     text-decoration: none;
     color: white;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     font-weight: bold;
     border-radius: 8px; /* Menentukan radius sudut */
     transition: color 0.3s ease; /* Menambahkan transisi hanya untuk warna teks */
@@ -130,6 +135,11 @@ margin-left: 10px;
 }
 
 /* Hero section styling */
+.hero-container{
+    width: 80%;
+    margin-inline: auto;
+}
+
 .hero {
     width: 100%;
     min-height: 100vh; /* Minimum height of viewport */
@@ -224,6 +234,11 @@ margin-left: 10px;
 }
 
 /* Styling for footer section */
+.footer-container{
+    width: 80%;
+    margin-inline: auto;
+}
+
 .footer {
     padding: 50px 0 50px 0; /* Padding for top and bottom of footer */
     background-color: #138230; /* Background color of footer */
@@ -386,15 +401,19 @@ margin-left: 10px;
 
 }
 
+.profile-container{
+    width: 80%;
+    margin-inline: auto;
+}
+
 .profile-wrapper {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .profile {
-    width: 200px;
-    margin: 20px;
+    width: 500px;
+    margin: 24px;
     text-align: center;
     border-radius: 10px;
     overflow: hidden;
@@ -409,12 +428,13 @@ margin-left: 10px;
     width: 100%;
     height: auto;
     display: block;
+    justify-content: space-around;
 }
 
 .profile .info {
     background-color: #138230;
     color: white;
-    padding: 10px;
+    padding: 5px;
     width: 100%; /* Agar .info mengambil lebar penuh dari .profile */
     box-sizing: border-box; /* Memastikan padding tidak menambahkan lebar */
 }
@@ -452,14 +472,8 @@ body {
     background-color: #f4f4f4;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 header {
     text-align: center;
-    padding: 20px 0;
     background-color: #007bff;
     color: #fff;
 }

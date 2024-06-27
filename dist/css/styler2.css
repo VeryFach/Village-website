@@ -14,7 +14,7 @@ body {
 
 /* Style for the header with a background image */
 header {
-    background-image: linear-gradient(rgba(255, 254, 254, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/hero-bg.jpg");
+    background-image: linear-gradient(rgba(255, 254, 254, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/foto\ bg\ dadaprejo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,6 +30,7 @@ header {
 /* Navbar styling */
 .navbar {
     padding: 20px 0 20px 0; /* Top and bottom padding */
+    background-color: #138230;
     position: fixed;
     width: 100%;  /* Full width */
     transition: all 0.3s ease; /* Smooth transition */
@@ -42,9 +43,7 @@ header {
 
 /* Navbar styling when scrolling */
 .navbar.scrolling-active {
-    background-color: #158630; /* Background color change */
     padding: 30px 0 30px 0; /* Adjusted padding */
-
 }
 
 /* Navbar layout and alignment */
@@ -136,71 +135,10 @@ header {
     display: none;
 }
 
-/* Hero section styling */
-.hero {
-    width: 100%;
-    min-height: 100vh; /* Minimum height of viewport */
-    display: flex;
-    align-items: center;
-    padding-top: 50px; /* Top padding */
-}
-
-/* Styling for hero content box */
-.hero .box-hero {
-    display: flex;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-template-rows: 1fr;
-    column-gap: 50px; /* Gap between columns */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-/* Styling for hero section title */
-.hero .box-hero .box:nth-child(1) h1 {
-    color: white; /* Text color */
-    font-size: 3vw; /* Responsive font size */
-    line-height: 1.3; /* Line height */
-    margin-bottom: 20px; /* Bottom margin */
-}
-
-/* Paragraph styling within hero section */
-.hero .box-hero .box:nth-child(1) p {
-    line-height: 2; /* Line height */
-    color: white; /* Text color */
-    margin-bottom: 20px; /* Bottom margin */
-    font-weight: 100; /* Font weight */
-}
-
-/* Button styling within hero section */
-.hero .box-hero .box:nth-child(1) button {
-    width: 180px;
-    height: 50px;
-    background-color: #138230;
-    font-weight: bold;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-/* Button hover effect */
-.hero .box-hero .box:nth-child(1) button:hover {
-    background-color: #0d5520;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-}
-
-/* Image styling within hero section */
-.hero .box-hero .box:nth-child(2) img {
-    width: 100%;
+.umkm-container {
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 100px;
 }
 
 /* Animation keyframes definition */
@@ -231,6 +169,11 @@ header {
 }
 
 /* Styling for footer section */
+.footer-container {
+    width: 80%;
+    margin-inline: auto;
+}
+
 .footer {
     padding: 50px 0 50px 0; /* Padding for top and bottom of footer */
     background-color: #138230; /* Background color of footer */
@@ -246,7 +189,7 @@ header {
 
 /* Styling for individual boxes within footer */
 .footer .box-footer .box {
-    color: black; /* Text color for box content */
+    color: white; /* Text color for box content */
 }
 
 /* Styling for specific box in footer (terms and conditions) */
@@ -395,18 +338,16 @@ header {
 
 .image-gallery {
     flex: 1;
-    text-align: center;
+    text-align: start;
+    padding: 20px 0 20px 0;
 }
 
 .image-gallery img {
-    max-width: 100%;
+    width: 60%;
     border-radius: 8px;
-}
-
-.thumbnail-container {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .thumbnail {
@@ -415,6 +356,9 @@ header {
     margin: 0 5px;
     cursor: pointer;
     border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 2px solid transparent;
 }
 

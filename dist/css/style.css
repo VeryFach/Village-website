@@ -14,7 +14,7 @@ body {
 
 /* Style for the header with a background image */
 header {
-    background-image: linear-gradient(rgba(255, 254, 254, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/hero-bg.jpg");
+    background-image: linear-gradient(rgba(255, 254, 254, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/foto\ bg\ dadaprejo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ header {
 }
 
 /* Container for centering content with 80% width */
-.container {
+.navbar-container {
     width: 80%;
     margin-inline: auto;
 }
@@ -130,6 +130,11 @@ header {
 }
 
 /* Hero section styling */
+.hero-container {
+    width: 80%;
+    margin-inline: auto;
+}
+
 .hero {
     width: 100%;
     min-height: 100vh; /* Minimum height of viewport */
@@ -238,6 +243,11 @@ header {
 }
 
 /* UMKM section styling */
+.umkm-container {
+    width: 80%;
+    margin-inline: auto;
+}
+
 .umkm {
     padding: 50px 0 50px 0;
 }
@@ -324,7 +334,64 @@ header {
     -o-transition: all 0.3s ease;
 }
 
+/* Contact Section */
+.contact .row {
+    display: flex;
+    justify-content: center;
+    width: 80%; /* Lebar kontainer adalah 80% dari parent */
+    margin: 3em auto; /* Margin atas dan bawah 3em, dan auto untuk tengah secara horizontal */
+    background-color: #222;
+}
+
+.contact .row iframe {
+    width: 100%; /* iframe mengambil seluruh lebar kontainer */
+    height: 56.25vw; /* aspect ratio 16:9, sesuai padding-bottom dari video-container */
+    max-height: 450px; /* batas tinggi maksimal untuk iframe */
+    border-radius: 10px; /* Memastikan iframe berbentuk persegi panjang dengan sudut bulat */
+    border: 0;
+}
+
+.contact h2{
+    text-align: center;
+    color: #0a0a0a;
+    margin-bottom: 1em;
+    color: #138230;
+    font-size: 2.6rem;
+}
+
+/* Animation keyframes definition */
+@keyframes animasi {
+    0% {
+        transform: scale(1); /* Transforms the element to its original size */
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2); /* Scales the element to 120% of its original size */
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1); /* Returns the element to its original size */
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
 /* Daftar section styling */
+.daftar-container {
+    width: 80%;
+    margin-inline: auto;
+}
+
 .daftar {
     padding: 50px 0 100px 0;
 }
@@ -362,83 +429,6 @@ header {
     color: #138230;
 }
 
-/* Contact Section */
-.contact .row {
-    display: flex;
-    width: 95%;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    margin-left: 2rem;
-    margin-right: 10rem;
-    background-color: #222;
-}
-  
-.contact .row .maps {
-    flex: 1 1 45rem;
-    width: 100%;
-    object-fit: cover;
-}
-  
-.contact .row form {
-    flex: 1 1 45rem;
-    padding: 5rem 2rem;
-    text-align: center;
-}
-  
-.contact .row form .input-group {
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-    background-color: black;
-    border: 1px solid #eee;
-    padding-left: 2rem;
-}
-  
-.contact .row form .input-group input {
-    width: 100%;
-    padding: 2rem;
-    font-size: 1.7rem;
-    background: none;
-    color: #fff;
-}
-  
-.contact .row form .btn {
-    margin-top: 3rem;
-    display: inline-block;
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
-    color: white;
-    background-color: #138230;
-    cursor: pointer;
-}
-
-/* Animation keyframes definition */
-@keyframes animasi {
-    0% {
-        transform: scale(1); /* Transforms the element to its original size */
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2); /* Scales the element to 120% of its original size */
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1); /* Returns the element to its original size */
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-    }
-}
-
 /* Styling for buttons inside .box-daftar within .daftar */
 .daftar .box-daftar button {
     border: none; /* Removes border from button */
@@ -463,6 +453,11 @@ header {
 }
 
 /* Styling for footer section */
+.footer-container {
+    width: 80%;
+    margin-inline: auto;
+}
+
 .footer {
     padding: 50px 0 50px 0; /* Padding for top and bottom of footer */
     background-color: #138230; /* Background color of footer */
