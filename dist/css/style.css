@@ -237,7 +237,7 @@ header {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Add shadow for a nicer effect */
 }
 
-/* Pantai section styling */
+/* UMKM section styling */
 .umkm {
     padding: 50px 0 50px 0;
 }
@@ -248,6 +248,16 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     row-gap: 50px;
+}
+
+.umkm h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.umkm h2 span{
+    color: #138230;
 }
 
 /* Individual box styling within pantai section */
@@ -336,6 +346,70 @@ header {
     margin-bottom: 10px;
     animation: animasi;
     -webkit-animation: animasi 2s infinite;
+}
+
+.contact {
+    padding: 8 rem 7% 1.4rem;
+}
+
+.contact h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.contact h2 span{
+    color: #138230;
+}
+
+/* Contact Section */
+.contact .row {
+    display: flex;
+    width: 95%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-right: 10rem;
+    background-color: #222;
+}
+  
+.contact .row .maps {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+  
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: black;
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+  
+.contact .row form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+}
+  
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #138230;
+    cursor: pointer;
 }
 
 /* Animation keyframes definition */
@@ -501,7 +575,7 @@ header {
 }
 
 /* Media query for screens up to 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 758px) {
     /* Adjusted grid layout for .box-hero */
     .hero .box-hero {
         grid-template-columns: 1fr; /* Single column layout */
@@ -525,6 +599,37 @@ header {
     .hero .box-hero .box:nth-child(2) img {
         width: 55vw; /* Adjusted width */
     }
+
+    .about .row{
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img{
+        height: 23rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .content h2 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    
+    .about .row .content p {
+        font-size: 1.2rem;
+    }
+    
+    .contact .row {
+        flex-wrap: wrap;
+    }
+    
+    .contact .row .map {
+        height: 30rem;
+    }
+    
+    .contact .row form {
+        padding-top: 0;
+    }
 }
 
 /* Media query for screens up to 575px */
@@ -536,8 +641,10 @@ header {
 }
 
 /* Media query for screens up to 475px */
-@media screen and (max-width: 475px) {
-
+@media screen and (max-width: 450px) {
+    html{
+        font-size: 55%;
+    }
 }
 
 /* Media query for screens up to 370px */

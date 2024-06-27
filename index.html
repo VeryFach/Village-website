@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet" />
 
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="dist/css/style.css" />
     <title>Website Resmi Kelurahan Dadaprejo</title>
@@ -36,7 +39,7 @@
                     </div>
                     <ul class="menu">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#umkm">UMKM</a></li>
+                        <li><a href="#umkm">Belanja</a></li>
                         <li><a href="#Video">Video</a></li>
                         <li class="active"><a href="#contact"><span>Contact</span></a></li>
                     </ul>
@@ -80,6 +83,7 @@
     <!-- UMKM Section Start -->
     <div class="umkm" id="umkm">
         <div class="container">
+            <h2><span>UMKM</span> Kami</h2>
             <div class="box-umkm">
                 <div class="umk">
                     <img src="img/umkm1.jpg" alt="" />
@@ -167,7 +171,7 @@
     </div>
     <!-- Konten Video Section End -->
 
-    <!-- Daftar -->
+    <!-- Daftar Section Start-->
     <div class="daftar" id="daftar">
         <div class="container">
             <div class="box-daftar">
@@ -182,9 +186,35 @@
             </div>
         </div>
     </div>
-    <!-- Daftar -->
+    <!-- Daftar Section End-->
 
-    <!-- Footer -->
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+        <h2><span>Contact</span> Kami</h2>
+    
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15807.370859461145!2d112.56269029791221!3d-7.911493923787503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78819d779b0b93%3A0xe42703db69720556!2sDadaprejo%2C%20Kec.%20Junrejo%2C%20Kota%20Batu%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1719472817110!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        <form action="">
+        <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Nama">
+        </div>
+        <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="No HP">
+        </div>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start-->
     <div class="footer">
         <div class="container">
             <div class="box-footer">
@@ -196,7 +226,7 @@
                 <div class="box">
                     <h3>Menu</h3>
                     <a href="#home">Home</a>
-                    <a href="#umkm">UMKM</a>
+                    <a href="#umkm">Belanja</a>
                     <a href="#video">Video</a>
                     <a href="#contact">Contact</a>
                 </div>
@@ -206,7 +236,11 @@
             </div>
         </div>
     </div>
-    <!-- Footer -->
+    <!-- Footer Section End-->
+
+    <script>
+        feather.replace();
+    </script>
 
     <script src="dist/js/script.js"></script>
 </body>
