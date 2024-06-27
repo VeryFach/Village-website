@@ -184,143 +184,6 @@ header {
     width: 100%;
 }
 
-/* Services section styling */
-.services {
-    width: 100%;
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    padding: 100px 0 50px 0;
-}
-
-/* Services box container styling */
-.services .box-services {
-    display: flex;
-    flex-wrap: wrap; /* Wrap items */
-    justify-content: space-evenly; /* Even spacing */
-    row-gap: 50px; /* Gap between rows */
-}
-
-/* Individual service box styling */
-.services .box-services .box {
-    width: 300px; /* Box width */
-    text-align: center; /* Box width */
-    color: black; /* Text color */
-}
-
-/* Icon styling within service box */
-.services .box-services .box i {
-    font-size: 40px; /* Icon size */
-    margin-bottom: 10px; /* Bottom margin */
-    color: #0050b3; /* Icon color */
-}
-
-/* Paragraph styling within service box */
-.services .box-services .box p {
-    font-weight: 100;
-}
-
-/* Pantai section styling */
-.pantai {
-    padding: 50px 0 50px 0;
-}
-
-/* Pantai box container styling */
-.pantai .box-pantai {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    row-gap: 50px;
-}
-
-/* Individual box styling within pantai section */
-.pantai .box-pantai .box {
-    text-align: center;
-    color: black;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-}
-
-/* Hover effect for boxes within pantai section */
-.pantai .box-pantai .box:hover {
-    transform: translateY(-20px);
-    -webkit-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    -o-transform: translateY(-20px);
-}
-
-/* Image styling within pantai box */
-.pantai .box-pantai .box img {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-/* Paragraph styling within pantai box */
-.pantai .box-pantai .box p {
-    font-weight: 100; /* Font weight */
-    margin-bottom: 10px; /* Bottom margin */
-}
-
-/* Button styling within pantai box */
-.pantai .box-pantai .box button {
-    width: 120px;
-    height: 40px;
-    border: none;
-    background-color: #138230;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Button hover effect within pantai box */
-.pantai .box-pantai .box button:hover {
-    background-color: #0b4f1d;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-}
-
-/* Daftar section styling */
-.daftar {
-    padding: 50px 0 100px 0;
-}
-
-/* Daftar box container styling */
-.daftar .box-daftar {
-    color: black;
-    text-align: center;
-}
-
-/* Daftar section title styling */
-.daftar .box-daftar h1 {
-    margin-bottom: 50px;
-}
-
-/* Daftar section subtitle styling */
-.daftar .box-daftar h3 {
-    font-weight: 400;
-    margin-bottom: 10px;
-    animation: animasi;
-    -webkit-animation: animasi 2s infinite;
-}
-
 /* Animation keyframes definition */
 @keyframes animasi {
     0% {
@@ -346,29 +209,6 @@ header {
         -ms-transform: scale(1);
         -o-transform: scale(1);
     }
-}
-
-/* Styling for buttons inside .box-daftar within .daftar */
-.daftar .box-daftar button {
-    border: none; /* Removes border from button */
-    min-width: 100px; /* Sets minimum width for button */
-    min-height: 40px; /* Sets minimum height for button */
-    border-radius: 5px; /* Adds rounded corners to button */
-    -webkit-border-radius: 5px; /* Vendor-specific prefix for border-radius */
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    background-color: #138230; /* Background color of the button */
-    color: white; /* Text color of the button */
-    padding-inline: 10px; /* Horizontal padding for button content */
-}
-
-/* Styling for icon inside button */
-.daftar .box-daftar button i {
-    font-size: 16px; /* Sets font size for icon */
-    font-weight: bold; /* Sets font weight for icon */
-    margin-inline: 5px; /* Horizontal margin for icon */
 }
 
 /* Styling for footer section */
@@ -476,11 +316,6 @@ header {
         font-size: 14px; /* Font size adjustment */
     }
 
-    /* Font size adjustment for heading in .box-daftar */
-    .daftar .box-daftar h1 {
-        font-size: 28px; /* Font size adjustment */
-    }
-
     /* Adjusted grid layout for footer */
     .footer .box-footer {
         grid-template-columns: 1fr; /* Single column layout */
@@ -525,10 +360,7 @@ header {
 
 /* Media query for screens up to 475px */
 @media screen and (max-width: 475px) {
-    /* Margin adjustment for button in .box-daftar */
-    .daftar .box-daftar button {
-        margin-bottom: 5px; /* Bottom margin */
-    }
+    
 }
 
 /* Media query for screens up to 370px */
