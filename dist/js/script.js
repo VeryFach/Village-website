@@ -19,17 +19,17 @@ window.addEventListener("scroll", () => {
 
 // Fungsi untuk membuka link WhatsApp
 function openWhatsapp() {
-    window.open('https://wa.me/qr/OL52W2G5J6AHL1', '_blank');
+    window.open('https://wa.me/+6281359501733', '_blank');
 }
 
 // Fungsi untuk membuka link Gmail
 function openGmail() {
-    window.open('mailto:veryfach@gmail.com', '_blank');
+    window.open('https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=veryfach@gmail.com', '_blank');
 }
 
 // Fungsi untuk membuka Google Form
 function openGoogleForm() {
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSeXu0sG0vb2JpI19UQw9nD3ZR5KmSbDvH3Gj-FJy6DzT2g8jA/viewform', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSfd7vVLBs9ORQ3CHPS2e4pHj5p7Y_U1Lw1fHf5a_vKIblL1Lw/viewform?usp=sf_link', '_blank');
 }
 
 // Event listener untuk tombol WhatsApp
@@ -120,4 +120,52 @@ document.addEventListener('DOMContentLoaded', function() {
 // Berita
 function redirectToDetail(articleId) {
     window.location.href = `?id=${articleId}`;
+}
+
+// whatsapp UMKM
+function contactSeller() {
+    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+// whatsapp UMKM 2
+function contactSeller2() {
+    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+// whatsapp UMKM 3
+function contactSeller3() {
+    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+// whatsapp UMKM 5
+function contactSeller4() {
+    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+// whatsapp UMKM 10
+function contactSeller5() {
+    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+// whatsapp UMKM 11
+function contactSeller6() {
+    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
 }
