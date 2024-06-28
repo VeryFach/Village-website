@@ -336,10 +336,13 @@ header {
 
 }
 
+/*Fungsi css untuk mengatur bagian penjelasan pada UMKM*/
 .image-gallery {
     flex: 1;
     text-align: start;
-    padding: 20px 0 20px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .image-gallery img {
@@ -348,6 +351,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.image-description {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.rating .star {
+    color: gold;
+    font-size: 24px;
 }
 
 .thumbnail {
