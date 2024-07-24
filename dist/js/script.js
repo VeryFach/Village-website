@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
 
 // Fungsi untuk membuka link WhatsApp
 function openWhatsapp() {
-    window.open('https://wa.me/+6281359501733', '_blank');
+    window.open('https://wa.me/+6281268892290', '_blank');
 }
 
 // Fungsi untuk membuka link Gmail
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.getElementById('youtubeVideoContainer').addEventListener('click', function() {
-    window.open('https://youtu.be/IrcoYCD9-nM?si=ca7eFsUV7LzsfORD', '_blank');
+    window.open('https://youtu.be/fI0PyrzRoTQ', '_blank');
 });
 
 document.querySelectorAll('.profile').forEach(function(profile) {
