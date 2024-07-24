@@ -242,10 +242,38 @@ header {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Add shadow for a nicer effect */
 }
 
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+}
+
+.map-section {
+    text-align: center;
+}
+
+.map-section img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* UMKM section styling */
 .umkm-container {
     width: 80%;
     margin-inline: auto;
+}
+
+.umkm .umkm-container p{
+    padding-top: 1px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
 .umkm {
@@ -263,7 +291,7 @@ header {
 .umkm h2{
     text-align: center;
     font-size: 2.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
 .umkm h2 span{
