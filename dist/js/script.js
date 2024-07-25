@@ -124,7 +124,7 @@ function redirectToDetail(articleId) {
 
 // whatsapp UMKM
 function contactSeller() {
-    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const phoneNumber = "+6281268892290"; // Ganti dengan nomor WhatsApp yang sesuai
     const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -132,7 +132,7 @@ function contactSeller() {
 
 // whatsapp UMKM 2
 function contactSeller2() {
-    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const phoneNumber = "+6281268892290"; // Ganti dengan nomor WhatsApp yang sesuai
     const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -140,7 +140,7 @@ function contactSeller2() {
 
 // whatsapp UMKM 3
 function contactSeller3() {
-    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const phoneNumber = "+6281268892290"; // Ganti dengan nomor WhatsApp yang sesuai
     const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -148,7 +148,7 @@ function contactSeller3() {
 
 // whatsapp UMKM 5
 function contactSeller4() {
-    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const phoneNumber = "+6281268892290"; // Ganti dengan nomor WhatsApp yang sesuai
     const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -156,7 +156,7 @@ function contactSeller4() {
 
 // whatsapp UMKM 10
 function contactSeller5() {
-    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const phoneNumber = "+6281268892290"; // Ganti dengan nomor WhatsApp yang sesuai
     const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -164,8 +164,62 @@ function contactSeller5() {
 
 // whatsapp UMKM 11
 function contactSeller6() {
-    const phoneNumber = "+6281359501733"; // Ganti dengan nomor WhatsApp yang sesuai
+    const phoneNumber = "+6281268892290"; // Ganti dengan nomor WhatsApp yang sesuai
     const message = "Halo, saya tertarik dengan produk yang di tawarkan di website .......(Nama barang yang ingin di beli).";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const dataList = document.getElementById("dataList");
+    let dataPenduduk = [];
+
+    // Fungsi untuk menyimpan data ke LocalStorage
+    const saveData = () => {
+        localStorage.setItem("dataPenduduk", JSON.stringify(dataPenduduk));
+    };
+
+    // Fungsi untuk memuat data dari LocalStorage
+    const loadData = () => {
+        const storedData = localStorage.getItem("dataPenduduk");
+        if (storedData) {
+            dataPenduduk = JSON.parse(storedData);
+        }
+    };
+
+    // Fungsi untuk menampilkan data ke dalam daftar
+    const displayData = () => {
+        dataList.innerHTML = '';
+        dataPenduduk.forEach(data => {
+            const li = document.createElement("li");
+            li.textContent = `Jenis Kelamin : ${data.nama}, Jumlah Penduduk : ${data.jumlah}`;
+            dataList.appendChild(li);
+        });
+    };
+
+    // Memuat data saat halaman dimuat
+    loadData();
+    displayData();
+
+    // Hanya menjalankan kode ini jika halaman admin
+    if (document.getElementById("dataForm")) {
+        const form = document.getElementById("dataForm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const nama = document.getElementById("nama").value;
+            const jumlah = document.getElementById("jumlah").value;
+
+            if (nama && jumlah) {
+                dataPenduduk.push({ nama: nama, jumlah: jumlah });
+                saveData();
+                displayData();
+
+                form.reset();
+            }
+        });
+    }
+});
+
+
